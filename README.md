@@ -59,7 +59,7 @@ Este programa foi codificado para procurar o FFmpeg em um caminho muito específ
 
 Após baixar e descompactar o arquivo `.zip` do FFmpeg, você **DEVE** seguir esta estrutura de pastas:
 
-1.  Na pasta onde você salvou o script `xiu.py` (ou onde o executável `.exe` está), crie uma pasta chamada `ffmpeg`.
+1.  Na pasta onde você salvou o script `main.py` (ou onde o executável `.exe` está), crie uma pasta chamada `ffmpeg`.
 2.  Entre na pasta `ffmpeg` que você acabou de criar.
 3.  Copie o conteúdo da pasta que você baixou (que inclui as pastas `bin`, `doc`, etc.) para dentro desta pasta `ffmpeg`.
 
@@ -86,9 +86,8 @@ O programa procura especificamente pelo caminho: `.\ffmpeg\bin\ffmpeg.exe`. Se e
 
 4.  **Execute o Programa:**
     ```bash
-    python xiu.py
+    python main.py
     ```
-    *(Assumindo que o arquivo principal se chama `xiu.py`)*
 
 ---
 
