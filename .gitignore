@@ -1,3 +1,17 @@
+# Ignora a virtual environment
+.venv/
+
+# Ignora as pastas de compilação do PyInstaller
+build/
+dist/
+
+# Ignora o arquivo de spec do PyInstaller
+Xiu.spec
+
+# Ignora seus arquivos de config e ícone
+config.json
+ICON.webp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
