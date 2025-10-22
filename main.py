@@ -1,6 +1,5 @@
 import customtkinter as ctk
 from tkinter import filedialog
-import tkfontawesome as fa
 from CTkMessagebox import CTkMessagebox
 from CTkMenuBar import *
 import subprocess
@@ -116,12 +115,10 @@ class App(ctk.CTk):
         frame_path_buttons = ctk.CTkFrame(frame_path, fg_color="transparent")
         frame_path_buttons.pack(fill="x", padx=10, pady=5)
 
-        folder_icon = fa.icon_to_image("folder-open", fill="white", scale_to_height=18)
-        ctk.CTkButton(frame_path_buttons, text="Selecionar arquivos", image=folder_icon,
+        ctk.CTkButton(frame_path_buttons, text="Selecionar arquivos",
                           compound="left", command=self.select_files).pack(side="left")
 
-        trash_icon = fa.icon_to_image("trash", fill="white", scale_to_height=18)
-        self.clear_button = ctk.CTkButton(frame_path_buttons, text="Limpar Lista", image=trash_icon, 
+        self.clear_button = ctk.CTkButton(frame_path_buttons, text="Limpar Lista",
                                         compound="left", command=self.clear_files, width=120)
         self.clear_button.pack(side="left", padx=10)
 
@@ -168,11 +165,9 @@ class App(ctk.CTk):
         )
         self.format_menu.pack(side="left", padx=(0, 10), pady=10)
 
-        scissors_icon = fa.icon_to_image("scissors", fill="white", scale_to_height=18)
         ctk.CTkButton(
             self,
             text="REMOVER SILÊNCIO",
-            image=scissors_icon,
             compound="left",
             height=40,
             fg_color="#1f6aa5",
